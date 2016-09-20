@@ -9,6 +9,7 @@ class MyActor extends Actor {
   context.watch(child)
 
   // 依頼元
+  // 後で書き換えるのでvar
   var lastSender: ActorRef = context.system.deadLetters // 既定は `/dev/null` 相当の deadLetters
 
   def receive = {
